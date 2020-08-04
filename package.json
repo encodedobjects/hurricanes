@@ -1,0 +1,26 @@
+{
+  "name": "hurricane",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "d3-geo": "^1.12.1",
+    "p5": "^1.1.9"
+  },
+  "devDependencies": {
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "raw-loader": "^4.0.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "prettier": {
+    "printWidth": 100
+  }
+}
