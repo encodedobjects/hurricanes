@@ -1,7 +1,12 @@
 import p5 from "p5";
 import bgMap from "./images/mercator-map.png";
 import { geoMercator } from "d3-geo";
-import { allHurricaneData, atlanticHurricanes, pacificHurricanes } from "./data/process-data";
+import {
+  allHurricaneData,
+  atlanticHurricanes,
+  pacificHurricanes,
+  japaneseHurricanes,
+} from "./data/process-data";
 
 let bgImage;
 let projection;
@@ -41,6 +46,7 @@ window.setup = () => {
   // Pick the hurricanes to visualize.
   // const selected = atlanticHurricanes.reverse().slice(0, 20); // 20 most recent atlantic.
   // const selected = pacificHurricanes.reverse().slice(0, 20); // 20 most recent pacific.
+  // const selected = japaneseHurricanes;
   const selected = allHurricaneData;
 
   selected.forEach((hurricane, i) => {
